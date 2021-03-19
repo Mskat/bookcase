@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Mskat/bookcase#readme",
   "dependencies": {
+    "mysql2": "^2.2.5",
     "prompt-sync": "^4.2.0"
   },
   "devDependencies": {
