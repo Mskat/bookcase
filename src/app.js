@@ -1,10 +1,10 @@
-const classControllerMenu = require('./controller/showMenu.js');
+const classControllerMenu = require('./controller/menu.js');
 
 class App {
 	static init() {
 		const controllerMenu = new classControllerMenu();
     
-		controllerMenu.showMenu();
+		controllerMenu.displayMenu();
 		controllerMenu.getUserInput();
 	}
 }
