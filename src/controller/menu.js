@@ -1,4 +1,7 @@
 const classInput = require('./input.js');
+const classControllerBookcaseModifier = require('../controller/bookcaseModifier.js');
+
+const controllerBookcaseModifier = new classControllerBookcaseModifier();
 
 class Menu {
 	displayMenu() {
@@ -17,9 +20,13 @@ class Menu {
 			switch (chosenNumber) {
 			case '1':
 				console.log('Book list:');
+				controllerBookcaseModifier.displayBooks();
+				this.displayMenu();
 				break;
 			case '2':
 				console.log('Add book:');
+				controllerBookcaseModifier.addBook();
+				this.displayMenu();
 				break;
 			case '3':
 				console.log('You closed the program.');
@@ -29,7 +36,7 @@ class Menu {
 				classInput._pressEnterToContinue();
 				this.displayMenu();
 			}
-		} while (!(chosenNumber == '3') && !(chosenNumber == '2') && !(chosenNumber == '1') );
+		} while (!(chosenNumber == '3'));
 	}
 }
 
