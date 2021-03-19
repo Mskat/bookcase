@@ -30,11 +30,11 @@ class Book {
 		this._intPagesNumber = intNumberOfPages;
 	}
 
-	getReleaseData() {
+	getReleaseDate() {
 		return this._intReleaseDate;
 	}
 
-	setReleaseData(intReleaseDate) {
+	setReleaseDate(intReleaseDate) {
 		this._intReleaseDate = intReleaseDate;
 	}
 }
