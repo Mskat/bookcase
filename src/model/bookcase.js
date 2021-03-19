@@ -2,7 +2,7 @@ class Bookcase {
 	constructor() {
 		this._arrBooks = [];
 	}
-	setBooks(objBook) {
+	setBook(objBook) {
 		this.getBooks().push(objBook);
 	}
 
