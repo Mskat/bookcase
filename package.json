@@ -20,5 +20,8 @@
   "homepage": "https://github.com/Mskat/bookcase#readme",
   "dependencies": {
     "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.22.0"
   }
 }
