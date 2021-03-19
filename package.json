@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/Mskat/bookcase#readme",
   "dependencies": {
-    "prompt": "^1.1.0"
+    "prompt-sync": "^4.2.0"
   }
 }
