@@ -25,6 +25,11 @@ class Input {
 		let intNumberOfPages = prompt('Enter number of pages: ');
 		return intNumberOfPages;
 	}
+
+	static _enterReleaseDate() {
+		let intReleaseDate = prompt('Enter release date: ');
+		return intReleaseDate;
+	}
 }
 
 module.exports = Input;
