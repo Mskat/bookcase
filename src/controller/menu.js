@@ -5,7 +5,7 @@ const controllerBookcaseModifier = new classControllerBookcaseModifier();
 
 class Menu {
 	displayMenu() {
-		console.log('Choose one of the options:');
+		console.log('\nChoose one of the options:');
 		console.log('1. Book list');
 		console.log('2. Add Book');
 		console.log('3. End program');
@@ -19,20 +19,20 @@ class Menu {
 			chosenNumber = classInput._getInput();
 			switch (chosenNumber) {
 			case '1':
-				console.log('Book list:');
+				console.log('\nBook list:');
 				controllerBookcaseModifier.displayBooks();
 				this.displayMenu();
 				break;
 			case '2':
-				console.log('Add book:');
+				console.log('\nAdd book:');
 				controllerBookcaseModifier.addBook();
 				this.displayMenu();
 				break;
 			case '3':
-				console.log('You closed the program.');
+				console.log('\nYou closed the program.');
 				break;
 			default:
-				console.log('Choose number from the list!\n');
+				console.log('\nChoose number from the list!');
 				classInput._pressEnterToContinue();
 				this.displayMenu();
 			}
